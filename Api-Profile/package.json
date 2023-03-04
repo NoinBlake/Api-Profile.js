@@ -1,0 +1,23 @@
+{
+  "name": "api-profile",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NoinBlake/Api-profile.js.git"
+  },
+  "keywords": [
+    "mi",
+    "proyecto"
+  ],
+  "author": "NoinBlake, joseluischocobar336@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NoinBlake/Api-profile.js/issues"
+  },
+  "homepage": "https://github.com/NoinBlake/Api-profile.js#readme"
+}

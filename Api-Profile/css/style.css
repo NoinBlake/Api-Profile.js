@@ -1,0 +1,122 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-family: 'Tilt Neon', cursive;
+}
+body{
+    height: 100vh;
+    background: linear-gradient( 306deg,  rgba(30,39,107,1) 21.8%, rgba(77,118,221,1) 100.2% );;
+}
+
+
+.contenedor{
+    height: 300px;
+    width: 100%;
+    background-color: white;
+    z-index: -10;
+    border: solid #080a1c 2px;
+    box-shadow: 24px 27px 42px -2px rgba(8,10,28,0.6);
+    border-radius: 20px;
+    display: grid;
+    grid-auto-flow: column;
+    /* transform: translateY(10%) */
+    
+}
+
+.pather{
+    height: 100%;
+    margin: 20px;
+    position: relative;
+    /* display: flex; */
+    /* justify-self: center;
+    align-self: baseline;
+    align-items: center; */
+    
+    
+}
+
+.arrow-left, .arrow-right{
+    justify-self: center;
+    align-self: center;
+    cursor: pointer;
+}
+
+.arrow-left i, .arrow-right i{
+    color:  rgba(77,118,221,1);
+    font-size: 35px;
+}
+
+#caja{
+    justify-self: center;
+    align-self: center;
+    padding-left: 20px;
+}
+#caja .card .img{
+    height: 150px;
+    width: 150px;
+    position: relative;
+    z-index: 2;
+}
+#caja .card .img img{
+    height: 150px;
+    border-radius: 50%;
+    
+}
+
+
+#caja .card .img::before{
+    content: "";
+    background:rgba(77,118,221,1);
+    height: 100%;
+    width: 100%;
+    top:0;
+    left:0;
+    z-index: -1;
+    position: absolute;
+    background: linear-gradient(45deg,rgba(77,118,221,1), white,rgba(30,39,107,1));
+    background-size: 800%;
+    border-radius: 50%;
+    filter: blur(8px);
+    animation: glowing 40s infinite;
+}
+
+@keyframes glowing {
+    0%{
+        background-position: 0 0;
+    }
+    50%{
+        background-position: 400% 0;
+    }
+    100%{
+        background-position: 0 0;
+    }
+}
+
+.title{
+    justify-self: center;
+    align-self: baseline;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    letter-spacing: 2px;
+}
+
+.title p{
+    font-size: 23px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.title i{
+    color:#8791bd;
+}
+
+.title .name{
+    color: #8791bd;
+}
+
+
